@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Universitarios | Ciencias & Ingeniería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-atom"></i>
+                <span>RecursosUni</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#materias">Materias</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#apoyar">Apoyar</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <header class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">📚 Recursos 100% Gratuitos</div>
+            <h1>Tu biblioteca digital para <span class="gradient-text">Ciencias e Ingeniería</span></h1>
+            <p class="hero-subtitle">Teoría, libros, exámenes resueltos, prácticas y precálculo. Todo el material que necesitas para dominar tus cursos universitarios.</p>
+            <div class="hero-actions">
+                <a href="https://drive.google.com/drive/folders/1qf1rXvZPJspdZFbT1pXE_pPv9dWuScxL?usp=sharing" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-google-drive"></i> Acceder al Drive Completo
+                </a>
+                <a href="#materias" class="btn btn-secondary">
+                    <i class="fas fa-compass"></i> Explorar Materias
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Materias</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Archivos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Acceso libre</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#materias"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <!-- ==================== MATERIAS ==================== -->
+    <section class="section" id="materias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contenido Disponible</span>
+                <h2>Materias</h2>
+                <p>Selecciona una materia para ver qué recursos están disponibles. Todo el material se encuentra organizado en Google Drive.</p>
+            </div>
+
+            <div class="subjects-grid">
+
+                <!-- Cálculo en una variable -->
+                <div class="subject-card" data-color="blue">
+                    <div class="card-icon">
+                        <i class="fas fa-square-root-variable"></i>
+                    </div>
+                    <h3>Cálculo en Una Variable</h3>
+                    <p>Límites, derivadas, integrales, series y sucesiones. Desde los fundamentos hasta técnicas avanzadas de integración.</p>
+                    <ul class="card-topics">
+                        <li><i class="fas fa-check"></i> Precálculo y fundamentos</li>
+                        <li><i class="fas fa-check"></i> Límites y continuidad</li>
+                        <li><i class="fas fa-check"></i> Derivadas y aplicaciones</li>
+                        <li><i class="fas fa-check"></i> Integrales y técnicas</li>
+                        <li><i class="fas fa-check"></i> Series y sucesiones</li>
+                    </ul>
+                    <div class="card-resources">
+                        <span><i class="fas fa-book"></i> Libros</span>
+                        <span><i class="fas fa-file-alt"></i> Exámenes</span>
+                        <span><i class="fas fa-pencil-alt"></i> Prácticas</span>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1qf1rXvZPJspdZFbT1pXE_pPv9dWuScxL?usp=sharing" target="_blank" class="card-link">
+                        Acceder al material <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Cálculo en varias variables -->
+                <div class="subject-card" data-color="purple">
+                    <div class="card-icon">
+                        <i class="fas fa-vector-square"></i>
+                    </div>
+                    <h3>Cálculo en Varias Variables</h3>
+                    <p>Funciones multivariables, derivadas parciales, integrales múltiples, campos vectoriales y teoremas fundamentales.</p>
+                    <ul class="card-topics">
+                        <li><i class="fas fa-check"></i> Funciones de varias variables</li>
+                        <li><i class="fas fa-check"></i> Derivadas parciales y gradiente</li>
+                        <li><i class="fas fa-check"></i> Integrales dobles y triples</li>
+                        <li><i class="fas fa-check"></i> Campos vectoriales</li>
+                        <li><i class="fas fa-check"></i> Teoremas de Green, Stokes y Gauss</li>
+                    </ul>
+                    <div class="card-resources">
+                        <span><i class="fas fa-book"></i> Libros</span>
+                        <span><i class="fas fa-file-alt"></i> Exámenes</span>
+                        <span><i class="fas fa-pencil-alt"></i> Prácticas</span>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1qf1rXvZPJspdZFbT1pXE_pPv9dWuScxL?usp=sharing" target="_blank" class="card-link">
+                        Acceder al material <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Física I -->
+                <div class="subject-card" data-color="orange">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Física I</h3>
+                    <p>Mecánica clásica: cinemática, dinámica, trabajo, energía, momento lineal, rotación y oscilaciones.</p>
+                    <ul class="card-topics">
+                        <li><i class="fas fa-check"></i> Cinemática y vectores</li>
+                        <li><i class="fas fa-check"></i> Leyes de Newton</li>
+                        <li><i class="fas fa-check"></i> Trabajo y energía</li>
+                        <li><i class="fas fa-check"></i> Momento lineal y colisiones</li>
+                        <li><i class="fas fa-check"></i> Rotación y oscilaciones</li>
+                    </ul>
+                    <div class="card-resources">
+                        <span><i class="fas fa-book"></i> Libros</span>
+                        <span><i class="fas fa-file-alt"></i> Exámenes</span>
+                        <span><i class="fas fa-pencil-alt"></i> Prácticas</span>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1qf1rXvZPJspdZFbT1pXE_pPv9dWuScxL?usp=sharing" target="_blank" class="card-link">
+                        Acceder al material <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Química -->
+                <div class="subject-card" data-color="green">
+                    <div class="card-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Química Inorgánica y General</h3>
+                    <p>Estructura atómica, tabla periódica, enlaces químicos, estequiometría, soluciones, equilibrio y termodinámica química.</p>
+                    <ul class="card-topics">
+                        <li><i class="fas fa-check"></i> Estructura atómica y periódica</li>
+                        <li><i class="fas fa-check"></i> Enlaces y geometría molecular</li>
+                        <li><i class="fas fa-check"></i> Estequiometría</li>
+                        <li><i class="fas fa-check"></i> Equilibrio químico</li>
+                        <li><i class="fas fa-check"></i> Termodinámica y cinética</li>
+                    </ul>
+                    <div class="card-resources">
+                        <span><i class="fas fa-book"></i> Libros</span>
+                        <span><i class="fas fa-file-alt"></i> Exámenes</span>
+                        <span><i class="fas fa-pencil-alt"></i> Prácticas</span>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1qf1rXvZPJspdZFbT1pXE_pPv9dWuScxL?usp=sharing" target="_blank" class="card-link">
+                        Acceder al material <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Álgebra Lineal -->
+                <div class="subject-card" data-color="red">
+                    <div class="card-icon">
+                        <i class="fas fa-table-cells"></i>
+                    </div>
+                    <h3>Álgebra Lineal</h3>
+                    <p>Matrices, determinantes, sistemas de ecuaciones, espacios vectoriales, transformaciones lineales y valores propios.</p>
+                    <ul class="card-topics">
+                        <li><i class="fas fa-check"></i> Matrices y determinantes</li>
+                        <li><i class="fas fa-check"></i> Sistemas de ecuaciones lineales</li>
+                        <li><i class="fas fa-check"></i> Espacios vectoriales</li>
+                        <li><i class="fas fa-check"></i> Transformaciones lineales</li>
+                        <li><i class="fas fa-check"></i> Valores y vectores propios</li>
+                    </ul>
+                    <div class="card-resources">
+                        <span><i class="fas fa-book"></i> Libros</span>
+                        <span><i class="fas fa-file-alt"></i> Exámenes</span>
+                        <span><i class="fas fa-pencil-alt"></i> Prácticas</span>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1qf1rXvZPJspdZFbT1pXE_pPv9dWuScxL?usp=sharing" target="_blank" class="card-link">
+                        Acceder al material <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RECURSOS / DRIVE ==================== -->
+    <section class="section section-dark" id="recursos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Google Drive</span>
+                <h2>Biblioteca Completa</h2>
+                <p>Todo el material está centralizado en una carpeta de Google Drive con acceso libre y organizado por materia.</p>
+            </div>
+
+            <div class="drive-showcase">
+                <div class="drive-info">
+                    <h3><i class="fab fa-google-drive"></i> ¿Qué encontrarás?</h3>
+                    <div class="drive-features">
+                        <div class="drive-feature">
+                            <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                            <div>
+                                <h4>Libros y Teoría</h4>
+                                <p>Textos universitarios de referencia, apuntes de clase y resúmenes teóricos para cada materia.</p>
+                            </div>
+                        </div>
+                        <div class="drive-feature">
+                            <div class="feature-icon"><i class="fas fa-file-signature"></i></div>
+                            <div>
+                                <h4>Exámenes Resueltos</h4>
+                                <p>Exámenes parciales y finales de semestres anteriores, con soluciones paso a paso.</p>
+                            </div>
+                        </div>
+                        <div class="drive-feature">
+                            <div class="feature-icon"><i class="fas fa-pen-ruler"></i></div>
+                            <div>
+                                <h4>Prácticas y Ejercicios</h4>
+                                <p>Hojas de práctica, ejercicios propuestos y problemas resueltos para reforzar cada tema.</p>
+                            </div>
+                        </div>
+                        <div class="drive-feature">
+                            <div class="feature-icon"><i class="fas fa-calculator"></i></div>
+                            <div>
+                                <h4>Precálculo</h4>
+                                <p>Material de nivelación y repaso de fundamentos matemáticos esenciales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drive-cta">
+                    <div class="drive-card">
+                        <div class="drive-card-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <h3>Accede a todo el material</h3>
+                        <p>Carpeta compartida con acceso libre. Descarga, estudia y comparte con tus compañeros.</p>
+                        <a href="https://drive.google.com/drive/folders/1qf1rXvZPJspdZFbT1pXE_pPv9dWuScxL?usp=sharing" target="_blank" class="btn btn-primary btn-lg">
+                            <i class="fab fa-google-drive"></i> Abrir Google Drive
+                        </a>
+                        <span class="drive-note"><i class="fas fa-lock-open"></i> Acceso libre — No se requiere permiso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== APOYAR / YAPE ==================== -->
+    <section class="section" id="apoyar">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Colabora</span>
+                <h2>¿Te fue útil? Apoya el proyecto</h2>
+                <p>Recopilar, organizar y mantener este material requiere tiempo y dedicación. Si te ayudó, considera apoyar para que sigamos compartiendo recursos. 💜</p>
+            </div>
+
+            <div class="yape-section">
+                <div class="yape-card">
+                    <div class="yape-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Yape_logo.svg/512px-Yape_logo.svg.png" alt="Yape" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="yape-icon-fallback" style="display:none;">
+                            <i class="fas fa-mobile-screen-button"></i>
+                        </div>
+                    </div>
+                    <h3>Yape</h3>
+                    <div class="yape-number">
+                        <span id="yapeNumber">913 266 290</span>
+                        <button class="copy-btn" onclick="copyYape()" title="Copiar número">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <p class="yape-name">Alva** Hu***</p>
+                    <p class="yape-message">Cualquier aporte es bienvenido y nos motiva a seguir compartiendo material de calidad. ¡Gracias! 🙌</p>
+                    <div id="copyToast" class="copy-toast">
+                        <i class="fas fa-check-circle"></i> ¡Número copiado!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <i class="fas fa-atom"></i>
+                        <span>RecursosUni</span>
+                    </a>
+                    <p>Recursos universitarios gratuitos para estudiantes de ciencias e ingeniería.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#materias">Materias</a>
+                    <a href="#recursos">Recursos</a>
+                    <a href="#apoyar">Apoyar</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Materias</h4>
+                    <a href="#materias">Cálculo I</a>
+                    <a href="#materias">Cálculo Multivariable</a>
+                    <a href="#materias">Física I</a>
+                    <a href="#materias">Química General</a>
+                    <a href="#materias">Álgebra Lineal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RecursosUni — Hecho con 💜 para estudiantes</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
